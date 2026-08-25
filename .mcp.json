@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "epstein-files-plugin": {
+      "command": "python",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/src/mcp_server.py"],
+      "env": {
+        "PYTHONUNBUFFERED": "1"
+      }
+    }
+  }
+}

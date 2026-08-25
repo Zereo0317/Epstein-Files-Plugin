@@ -1,0 +1,69 @@
+# ── Secrets / environment (NEVER commit) ──────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*_secret*
+*secret.json
+*credentials*.json
+service-account*.json
+*-sa.json
+
+# ── Node (package.json is metadata-only for ClawHub packaging; no real
+#    Node/JS toolchain, this stays a pure-Python plugin) ─────────────────
+node_modules/
+
+# ── ClawHub validator output (regenerable, not source) ─────────────────
+reports/
+
+# ── Python ───────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyright/
+.coverage
+htmlcov/
+*.egg-info/
+.eggs/
+
+# ── Build / generated artifacts ───────────────────────────────────────
+dist/
+build/
+out/
+.cache/
+outputs/
+tmp/
+*.log
+
+# ── EFTA: downloaded public PDFs + exports are not source ──────────────
+downloads/
+*.pdf
+exports/
+*.sqlite
+*.sqlite3
+*.db
+*.bak
+*.orig
+
+# ── OS / editor cruft ─────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
+
+# Claude Code (local session state; never track)
+.claude/
+

@@ -1,0 +1,11 @@
+requests>=2.31.0
+# Pinned below 2.0: the official MCP Python SDK's v2.0.0 (2026-07-28) renamed
+# FastMCP -> MCPServer and moved mcp.server.fastmcp -> mcp.server.mcpserver,
+# which breaks the `from mcp.server.fastmcp import FastMCP` import this server
+# uses. Re-evaluate the migration deliberately; don't let this float to v2.
+mcp>=1.29.0,<2.0.0
+# NOTE: the standalone PrefectHQ/fastmcp package (now v3.x/4.0, a different
+# project from this one) is NOT used anywhere in this codebase — mcp_server.py
+# imports FastMCP from mcp.server.fastmcp, which ships inside the `mcp`
+# package above. Do not re-add a `fastmcp` requirement without an actual
+# `import fastmcp` / `from fastmcp import ...` call site.

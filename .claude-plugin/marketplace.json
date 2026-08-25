@@ -1,0 +1,22 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "epstein-files-plugin",
+  "description": "Claude Code plugin (also a standalone MCP server + CLI) for the public DOJ Epstein Files Transparency Act release (~1.4M documents / ~2.8-2.9M pages across 12 DataSets, 20 Datasette databases). Search by full text or sender/recipient/date, resolve any EFTA number to its official DOJ PDF URL, consult a fact-checked known-document registry, and query any of the 20 databases (images, transcripts, OCR, the knowledge graph, and more) including read-only SQL — all via 11 read-only MCP tools.",
+  "owner": {
+    "name": "Capital Research",
+    "email": "zereo@spacebio.solutions"
+  },
+  "plugins": [
+    {
+      "name": "epstein-files-plugin",
+      "description": "Claude Code plugin (also a standalone MCP server + CLI) for the public DOJ Epstein Files Transparency Act release (~1.4M documents / ~2.8-2.9M pages across 12 DataSets, 20 Datasette databases). Search by full text or sender/recipient/date, resolve any EFTA number to its official DOJ PDF URL, consult a fact-checked known-document registry, and query any of the 20 databases (images, transcripts, OCR, the knowledge graph, and more) including read-only SQL — all via 11 read-only MCP tools.",
+      "author": {
+        "name": "Capital Research",
+        "email": "zereo@spacebio.solutions"
+      },
+      "category": "database",
+      "source": "./",
+      "homepage": "https://github.com/Zereo0317/Epstein-Files-Plugin"
+    }
+  ]
+}

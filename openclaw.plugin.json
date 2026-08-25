@@ -1,0 +1,37 @@
+{
+  "id": "epstein-files-plugin",
+  "name": "Epstein Files Plugin",
+  "version": "1.0.0",
+  "description": "Research toolkit for the public DOJ Epstein Files Transparency Act release — search ~1.4M documents across 20 databases (emails, images, transcripts, OCR, knowledge graph), resolve any EFTA number to its official DOJ PDF, cross-check viral claims against a fact-checked registry.",
+  "configSchema": {
+    "type": "object",
+    "properties": {},
+    "additionalProperties": false
+  },
+  "icon": "https://raw.githubusercontent.com/Zereo0317/Epstein-Files-Plugin/main/assets/efta-archive-search-icon.png",
+  "skills": ["efta-research", "doj-auth"],
+  "mcpServers": {
+    "epstein-files-plugin": {
+      "command": "python",
+      "args": ["./src/mcp_server.py"],
+      "env": {
+        "PYTHONUNBUFFERED": "1"
+      }
+    }
+  },
+  "contracts": {
+    "tools": [
+      "efta_search",
+      "efta_filter_email",
+      "efta_known_docs",
+      "efta_get_url",
+      "efta_verify_url",
+      "efta_lookup",
+      "efta_list_databases",
+      "efta_list_tables",
+      "efta_describe_table",
+      "efta_query_table",
+      "efta_run_sql"
+    ]
+  }
+}

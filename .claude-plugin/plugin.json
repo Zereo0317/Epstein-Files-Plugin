@@ -1,0 +1,14 @@
+{
+  "name": "epstein-files-plugin",
+  "description": "Claude Code plugin (also a standalone MCP server + CLI) for the public DOJ Epstein Files Transparency Act release (~1.4M documents / ~2.8-2.9M pages across 12 DataSets, 20 Datasette databases). Search by full text or sender/recipient/date, resolve any EFTA number to its official DOJ PDF URL, consult a fact-checked known-document registry, and query any of the 20 databases (images, transcripts, OCR, the knowledge graph, and more) including read-only SQL — all via 11 read-only MCP tools.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Capital Research",
+    "email": "zereo@spacebio.solutions"
+  },
+  "homepage": "https://github.com/Zereo0317/Epstein-Files-Plugin",
+  "repository": "https://github.com/Zereo0317/Epstein-Files-Plugin",
+  "license": "MIT-0",
+  "keywords": ["osint", "epstein-files", "doj", "efta", "mcp-server", "model-context-protocol", "foia", "fact-checking", "transparency", "research-tool", "datasette", "python", "claude-code", "journalism", "public-records"],
+  "mcpServers": "./.mcp.json"
+}
